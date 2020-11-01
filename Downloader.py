@@ -62,7 +62,7 @@ def selectLinks():
             file.write(i+"\n")
 
     file.close()
-    print("   > Total Of "+len(links)+" Links Have Been Selected.")
+    print("   > Total Of "+str(len(links))+" Links Have Been Selected.")
     return links
 
 def startDownload():
@@ -72,7 +72,7 @@ def startDownload():
         if h==4:
             break
         else:
-            print("   > Waiting Until 4 To Start Downloading.(Checked At "+h+":"+m+")")
+            print("   > Waiting Until 4 To Start Downloading.(Checked At "+str(h)+":"+str(m)+")")
             time.sleep(600)
 
     downloader=IDMan()
